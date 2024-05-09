@@ -74,5 +74,9 @@
       "first-time-contributor",
       "released"
     ]
+  },
+  "packageManager": "pnpm@9.0.6",
+  "engines": {
+    "node": ">=18"
   }
 }
