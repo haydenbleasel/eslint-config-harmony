@@ -14,6 +14,7 @@ import prettier from 'eslint-plugin-prettier';
 import cypress from 'eslint-plugin-cypress';
 import storybook from 'eslint-plugin-storybook';
 import unusedImports from 'eslint-plugin-unused-imports';
+import turbo from 'eslint-plugin-turbo';
 // import tailwindcss from 'eslint-plugin-tailwindcss';
 import * as importTypescriptResolver from 'eslint-import-resolver-typescript';
 
@@ -36,6 +37,7 @@ import cypressRules from './rules/cypress.mjs';
 import storybookRules from './rules/storybook.mjs';
 // import tailwindcssRules from './rules/tailwindcss.mjs';
 import unusedImportsRules from './rules/unused-imports.mjs';
+import turboRules from './rules/turbo.mjs';
 
 // Patch AudioWorkletGlobalScope
 const browserGlobals = { ...globals.browser };
@@ -77,6 +79,7 @@ const config = [
       n,
       '@next/next': next,
       'unused-imports': unusedImports,
+      turbo,
       // tailwindcss,
     },
     rules: {
@@ -91,6 +94,7 @@ const config = [
       ...prettierRules,
       ...eslintPrettier.rules,
       ...unusedImportsRules,
+      ...turboRules,
       // ...tailwindcssRules,
     },
 

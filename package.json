@@ -16,6 +16,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-tailwindcss": "^3.13.0",
+    "eslint-plugin-turbo": "^1.13.3",
     "eslint-plugin-unused-imports": "^3.0.0",
     "globals": "^13.24.0",
     "prettier-plugin-tailwindcss": "^0.5.9",
