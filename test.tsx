@@ -9,3 +9,5 @@ const y = x();
 const something_NOT_recommended = true;
 
 const Component = () => <div className="mx-5 my-5" />;
+
+const envVar = process.env.NODE_ENV;
