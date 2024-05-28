@@ -18,6 +18,7 @@ import unusedImports from 'eslint-plugin-unused-imports';
 import * as importTypescriptResolver from 'eslint-import-resolver-typescript';
 import html from 'eslint-plugin-html';
 import compat from 'eslint-plugin-compat';
+import markdown from 'eslint-plugin-markdown';
 
 import eslintPrettier from 'eslint-config-prettier';
 import * as typescriptParser from '@typescript-eslint/parser';
@@ -44,6 +45,7 @@ import compatRules from './rules/compat.mjs';
 
 const config = [
   importPlugin.configs.typescript,
+  ...markdown.configs.recommended,
   {
     languageOptions: {
       sourceType: 'module',
