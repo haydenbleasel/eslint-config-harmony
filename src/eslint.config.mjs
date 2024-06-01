@@ -24,6 +24,7 @@ import sonarjs from 'eslint-plugin-sonarjs';
 import unicorn from 'eslint-plugin-unicorn';
 import github from 'eslint-plugin-github';
 import * as query from '@tanstack/eslint-plugin-query';
+import yml from 'eslint-plugin-yml';
 
 import eslintRules from './rules/eslint.mjs';
 import reactRules from './rules/react.mjs';
@@ -46,6 +47,7 @@ import compatRules from './rules/compat.mjs';
 import unicornRules from './rules/unicorn.mjs';
 import githubRules from './rules/github.mjs';
 import queryRules from './rules/query.mjs';
+import ymlRules from './rules/yml.mjs';
 
 const config = [
   importPlugin.configs.typescript,
@@ -192,6 +194,15 @@ const config = [
     },
     settings: {
       'html/javascript-tag-names': ['script', 'Script'],
+    },
+  },
+  {
+    files: ['**/*.yml', '**/*.yaml'],
+    plugins: {
+      yml,
+    },
+    rules: {
+      ...ymlRules,
     },
   },
 ];

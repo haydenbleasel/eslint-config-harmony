@@ -15,5 +15,13 @@
   "eslint.experimental.useFlatConfig": true,
   "eslint.options": {
     "overrideConfigFile": "eslint.config.mjs"
-  }
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "typescriptreact",
+    "yaml",
+    "github-actions-workflow"
+  ]
 }

@@ -1,0 +1,13 @@
+"GOOD" : "foo"
+"BAD":
+  "bar"
+
+good:
+  - a
+  - b
+  - c
+
+bad:
+  - a
+  - c
+  - b
